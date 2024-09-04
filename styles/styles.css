@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.min.css');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    color: #282d31;
+}
+
+nav {
+    background-color: #282d31; /* cor de fundo do menu */
+    padding: 1rem; /* espaçamento interno do menu */
+    width: 100%;
+}
+
+#menu ul {
+    list-style: none; /* remove os marcadores da lista */
+    padding: 0; /* remove o preenchimento padrão da lista */
+    margin: 0; /* remove a margem padrão da lista */
+    display: flex; /* exibe os itens em linha */
+    justify-content: center; /* centraliza o menu horizontalmente */
+}
+
+#menu li {
+    margin: 0 10px; /* espaçamento entre os itens */
+}
+
+#menu a {
+    color: #f3f4f6; /* cor do texto dos links */
+    text-decoration: none; /* remove o sublinhado dos links */
+    padding: 10px; /* espaçamento interno dos links */
+    text-transform: uppercase; /* transforma o texto em maiúsculas */
+    transition: background-color 0.3s; /* transição suave para a cor de fundo */
+}
+
+#menu a:hover {
+    background-color: #669ccb; /* cor de fundo ao passar o mouse sobre o link */
+    color: #ffffff; /* cor do texto ao passar o mouse sobre o link */
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(45, 92, 132, 0.5), rgba(45, 92, 132, 0.5)), url("img/bg-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .section__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #f3f4f6;
+}
+
+.header__content h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+.header__content p {
+    text-align: center;
+}
+
+.header__content button {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #669ccb;
+    color: #f3f4f6;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header__content button:hover {
+    background-color: #5681a7;
+}
+
+.journey__container {
+    background-color: #e8f1fa;
+    padding: 2rem 1rem;
+}
+
+.journey__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.country__card {
+    background-color: #f3f4f6;
+}
+
+.country__card img {
+    width: 100%;
+    height: auto;
+}
+
+.country__name {
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #767268;
+    cursor: pointer;
+}
+
+.country__name span {
+    font-style: italic;
+}
+
+.banner__container {
+    background-image: linear-gradient(rgba(35, 71, 103, 0.5), rgba(35, 71, 103, 0.5)), url("img/bg-2.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: #f3f4f6;
+    padding: 10rem 1rem;
+    text-align: center;
+}
+
+.banner__content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.banner__content p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner__content button {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #669ccb;
+    color: #f3f4f6;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner__content button:hover {
+    background-color: #5681a7;
+}
+
+.display__container {
+    padding: 2rem 1rem;
+}
+
+.display__title {
+    text-align: center;
+}
+
+.display__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.display__card {
+    background-color: #f3f4f6;
+    padding: 1rem;
+}
+
+.display__card img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #282d31;
+    color: #f3f4f6;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer .social__icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+footer .social__icons span {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer .social__icons span:hover {
+    color: #669ccb;
+}
